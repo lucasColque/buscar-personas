@@ -31,8 +31,9 @@ function App() {
       if(elemento.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
       ||
       elemento.company.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())){
-        return elemento;
+        return true;
       }
+      return false
     })
     setUsuarios(resultadoBusqueda);
   }
